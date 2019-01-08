@@ -1,0 +1,14 @@
+{
+  "name": "plansze1",
+  "version": "1.0.0",
+  "description": "proba plansz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "marcin",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.7.2"
+  }
+}
