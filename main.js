@@ -9,8 +9,7 @@ a.classList.add("is-current");
 
 function drugi() {
     newImage.src = "pytanie3.jpg";
-    document.querySelector('.pagination-link').classList.remove('is-current');
-    //a.classList.remove("is-current");
+    document.querySelector('.is-current').classList.remove('is-current');
     b.classList.add("is-current");
 }
 
@@ -20,13 +19,7 @@ var lista = document.querySelectorAll('.pagination-link');
 
 function pierwszy() {
     newImage.src = "pytanie2.jpg";
-
-    for (let i = 0; i < lista.lenght; i++) {
-        lista[i].classList.remove('is-current');
-        
-    };
-    //document.querySelector('.pagination-link').classList.remove('is-current');
-    //a.classList.remove("is-current");
+    document.querySelector('.is-current').classList.remove('is-current');
     a.classList.add("is-current");
 }
 
@@ -34,18 +27,24 @@ a.onclick = pierwszy;
 
 function trzeci() {
     newImage.src = "pytanie1.jpg";
+    document.querySelector('.is-current').classList.remove('is-current');
+    c.classList.add("is-current");
 }
 var c = document.getElementById("trzy");
 c.onclick = trzeci;
 
 function czwarty() {
     newImage.src = "pytanie4.jpg";
+    document.querySelector('.is-current').classList.remove('is-current');
+    d.classList.add("is-current");
 }
 var d = document.getElementById("cztery");
 d.onclick = czwarty;
 
 function piaty() {
     newImage.src = "pytanie5.jpg";
+    document.querySelector('.is-current').classList.remove('is-current');
+    e.classList.add("is-current");
 }
 var e = document.getElementById("piec");
 e.onclick = piaty;
