@@ -1,0 +1,117 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700&subset=latin,latin-ext);
+	html,body {
+		font-family:'Source Sans Pro', sans-serif;
+		height:100%;
+		margin:0;
+		padding:0;
+	}
+	.wrap-all {
+		overflow: hidden;
+		width:100%;
+		position: relative;
+	}
+	.page-main {
+		padding:20px;
+		position: relative;
+		color:#666;
+		font-size:16px;
+		line-height: 1.4em;
+	}
+
+/* navigation toggle */
+	.navigation-toggle {
+		position:fixed;
+		top:10px;
+		right:10px;
+		width:40px;
+		height:40px;
+		background: #222;
+		border-radius:2px;
+		display: block;
+		z-index: 100;
+		cursor: pointer;
+	}
+	.navigation-toggle span {
+		width:20px;
+		height:3px;
+		margin:4px 10px;
+		display: block;
+		background: #fff;
+		border-radius:1px;
+	}
+	.navigation-toggle span:first-child {
+		margin-top:12px;
+	}
+
+/* navigation */
+	.navigation {
+		z-index: 2;
+		min-height: 100%;
+		font-family:'Source Sans Serif', sans-serif;
+		font-weight:300;
+		font-size:14px;
+		position: fixed;
+		top:0;
+		left:-250px;
+		width:250px;
+		background: #1A2124;
+		height:100%;
+		overflow: hidden;
+		overflow-y:auto;
+		color:#42505A;
+		-webkit-transition: 0.5s left;
+		-moz-transition: 0.5s left;
+		-ms-transition: 0.5s left;
+		-o-transition: 0.5s left;
+		transition: 0.5s left;
+	}
+
+	.navigation a {
+		color:#42505A;
+	}
+	.navigation ul {
+		list-style:none;
+		padding:0;
+		margin:20px 0;
+	}
+	.navigation ul li {
+		text-transform: uppercase;
+		border-bottom:1px solid #090B0D;
+		font-weight:600;
+	}
+	.navigation ul li:last-child {
+		border-bottom:0;
+	}
+	.navigation ul li a {
+		display: block;
+		height:50px;
+		line-height: 50px;
+		text-decoration: none;
+		padding:0 20px 0 30px;
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		-ms-transition: 0.3s;
+		-o-transition: 0.3s;
+		transition: 0.3s;
+
+	}
+	.navigation ul li a:hover {
+		background:#3BB4BC;
+		color:#fff;
+		border-left:6px solid #329EA5;
+	}
+	.navigation .logo {
+		text-align: center;
+		margin:20px 0;
+	}
+	.navigation .logo img {
+		max-width:120px;
+		height:auto;
+	}
+.navigation-show .page-content {
+	left:250px;
+}
+.navigation-show .navigation {
+	box-shadow:0 2px 10px rgba(0,0,0,0.2);
+	left:0;
+}

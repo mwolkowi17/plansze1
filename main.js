@@ -48,3 +48,11 @@ function piaty() {
 }
 var e = document.getElementById("piec");
 e.onclick = piaty;
+
+var menu = document.querySelector(".navigation-toggle");
+
+function wybor() {
+    document.querySelector("body").classList.toggle('navigation-show');
+}
+
+menu.onclick = wybor;
