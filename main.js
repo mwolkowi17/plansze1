@@ -3,6 +3,7 @@ newImage.width = 1240;
 newImage.height = 595;
 newImage.src = "pytanie2.jpg" //podajemy jego src
 
+
 document.querySelector('#obrazek').appendChild(newImage);
 var a = document.querySelector('.pagination-link');
 a.classList.add("is-current");
@@ -56,3 +57,15 @@ function wybor() {
 }
 
 menu.onclick = wybor;
+
+var aa = document.getElementById("p1");
+var bb = document.getElementById("p2");
+var cc = document.getElementById("p3");
+var dd = document.getElementById("p4");
+var ee = document.getElementById("p5");
+
+aa.onclick = pierwszy;
+bb.onclick = drugi;
+cc.onclick = trzeci;
+dd.onclick = czwarty;
+ee.onclick = piaty;

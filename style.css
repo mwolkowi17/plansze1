@@ -58,7 +58,7 @@
 		height:100%;
 		overflow: hidden;
 		overflow-y:auto;
-		color:#42505A;
+		color:deepskyblue;
 		-webkit-transition: 0.5s left;
 		-moz-transition: 0.5s left;
 		-ms-transition: 0.5s left;
@@ -67,7 +67,7 @@
 	}
 
 	.navigation a {
-		color:#42505A;
+		color:deepskyblue;
 	}
 	.navigation ul {
 		list-style:none;
